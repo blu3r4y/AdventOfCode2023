@@ -1,0 +1,16 @@
+# anytree
+# dotmap
+# ipykernel
+# lark
+# pandas
+# plotly
+# pyforever
+# scipy
+# tqdm
+advent-of-code-data~=2.0.1
+funcy~=2.0
+matplotlib~=3.8.2
+networkx~=3.2.1
+numpy~=1.26.2
+parse~=1.20.0
+sympy~=1.12
