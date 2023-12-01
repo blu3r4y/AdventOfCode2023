@@ -8,7 +8,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 
 | Day | 🧩 Puzzle                                              | 🐍 Solution            | ⏳ Duration A | ⏳ Duration B |
 | --: | :----------------------------------------------------- | :--------------------- | ------------: | ------------: |
-|   1 | **[Trebuchet?!](https://adventofcode.com/2023/day/1)** | [day1.py](src/day1.py) |             - |         35 ms |
+|   1 | **[Trebuchet?!](https://adventofcode.com/2023/day/1)** | [day1.py](src/day1.py) |             - |             - |
 
 Timings are measured on my computer in a non-scientific way.
 Empty durations indicate a runtime of less than a few milliseconds.

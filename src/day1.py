@@ -1,11 +1,14 @@
 # Advent of Code 2023, Day 1
 # (c) blu3r4y
 
+import re
+
 from aocd.models import Puzzle
-from funcy import print_calls, print_durations, lfilter
+from funcy import lfilter, print_calls, print_durations
 
-
-NUMBERS = {
+NUMS_REGEX_PATTERN = r"(?=(\d|one|two|three|four|five|six|seven|eight|nine))"
+NUMS_REGEX = re.compile(NUMS_REGEX_PATTERN)
+NUMS = {
     "zero": "0",
     "one": "1",
     "two": "2",
@@ -35,14 +38,8 @@ def part1(lines):
 def part2(lines):
     total = 0
     for line in lines:
-        numbers = []
-        for i in range(len(line)):
-            if line[i].isnumeric():
-                numbers.append(line[i])
-            for txt, val in NUMBERS.items():
-                if line[i:].startswith(txt):
-                    numbers.append(val)
-
+        numbers = NUMS_REGEX.findall(line)
+        numbers = [NUMS.get(n, n) for n in numbers]
         total += int(numbers[0] + numbers[-1])
 
     return total
