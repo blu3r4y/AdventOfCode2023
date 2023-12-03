@@ -10,6 +10,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 | --: | :-------------------------------------------------------- | :--------------------- | ------------: | ------------: |
 |   1 | **[Trebuchet?!](https://adventofcode.com/2023/day/1)**    | [day1.py](src/day1.py) |             - |             - |
 |   2 | **[Cube Conundrum](https://adventofcode.com/2023/day/2)** | [day2.py](src/day2.py) |             - |             - |
+|   3 | **[Gear Ratios](https://adventofcode.com/2023/day/3)**    | [day3.py](src/day3.py) |             - |        187 ms |
 
 Timings are measured on my computer in a non-scientific way.
 Empty durations indicate a runtime of less than a few milliseconds.
