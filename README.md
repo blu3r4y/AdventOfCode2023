@@ -14,6 +14,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 |   4 | **[Scratchcards](https://adventofcode.com/2023/day/4)**                    | [day4.py](src/day4.py) |             - |             - |
 |   5 | **[If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5)** |                        |               |               |
 |   6 | **[Wait For It](https://adventofcode.com/2023/day/6)**                     | [day6.py](src/day6.py) |             - |             - |
+|   7 | **[Camel Cards](https://adventofcode.com/2023/day/7)**                     | [day7.py](src/day7.py) |         26 ms |      9.909 ms |
 
 Timings are measured on my computer in a non-scientific way.
 Empty durations indicate a runtime of less than a few milliseconds.
