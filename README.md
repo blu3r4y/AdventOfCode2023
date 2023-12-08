@@ -12,7 +12,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 |   2 | **[Cube Conundrum](https://adventofcode.com/2023/day/2)**                  | [day2.py](src/day2.py) |             - |             - |
 |   3 | **[Gear Ratios](https://adventofcode.com/2023/day/3)**                     | [day3.py](src/day3.py) |             - |        187 ms |
 |   4 | **[Scratchcards](https://adventofcode.com/2023/day/4)**                    | [day4.py](src/day4.py) |             - |             - |
-|   5 | **[If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5)** |                        |               |               |
+|   5 | **[If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5)** | [day5.py](src/day5.py) |             - |             - |
 |   6 | **[Wait For It](https://adventofcode.com/2023/day/6)**                     | [day6.py](src/day6.py) |             - |             - |
 |   7 | **[Camel Cards](https://adventofcode.com/2023/day/7)**                     | [day7.py](src/day7.py) |         26 ms |         46 ms |
 |   8 | **[Haunted Wasteland](https://adventofcode.com/2023/day/8)**               | [day8.py](src/day8.py) |             - |        191 ms |
