@@ -1,20 +1,11 @@
 # Advent of Code 2023, Day 6
 # (c) blu3r4y
 
-from math import sqrt, ceil, floor
+from math import ceil, floor, sqrt
 
 from aocd.models import Puzzle
-from funcy import print_calls, print_durations, lmap
+from funcy import lmap, print_calls, print_durations
 from parse import parse
-
-
-def compute_number_of_ways(t, d):
-    h1 = 1 / 2 * (t - sqrt(t**2 - 4 * d))
-    h2 = 1 / 2 * (t + sqrt(t**2 - 4 * d))
-
-    eps = 1e-10  # add some epsilon to respect inequalities
-    nways = floor(h2 - eps) - ceil(h1 + eps) + 1
-    return nways
 
 
 @print_calls
@@ -37,6 +28,15 @@ def part2(data):
     d = int("".join(map(str, dists)))
 
     return compute_number_of_ways(t, d)
+
+
+def compute_number_of_ways(t, d):
+    h1 = 1 / 2 * (t - sqrt(t**2 - 4 * d))
+    h2 = 1 / 2 * (t + sqrt(t**2 - 4 * d))
+
+    eps = 1e-10  # add some epsilon to respect inequalities
+    nways = floor(h2 - eps) - ceil(h1 + eps) + 1
+    return nways
 
 
 def load(data):

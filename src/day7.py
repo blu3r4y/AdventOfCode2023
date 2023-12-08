@@ -1,8 +1,8 @@
 # Advent of Code 2023, Day 7
 # (c) blu3r4y
 
-from functools import cmp_to_key, partial
 from collections import Counter
+from functools import cmp_to_key, partial
 
 from aocd.models import Puzzle
 from funcy import collecting, print_calls, print_durations

@@ -24,7 +24,6 @@ def part1(grid):
                 for x in range(xstart, xend + 1):
                     if (y + dy, x + dx) in symbols:
                         is_part_number = True
-                        continue
 
         if is_part_number:
             total += cell
