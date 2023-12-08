@@ -1,8 +1,7 @@
 # Advent of Code 2023, Day 7
 # (c) blu3r4y
 
-import functools
-import itertools
+from functools import cmp_to_key, partial
 from collections import Counter
 
 from aocd.models import Puzzle
@@ -16,37 +15,35 @@ RANKS_PART2 = "J23456789TQKA"
 @print_calls
 @print_durations(unit="ms")
 def part1(hands):
-    hands = sorted(hands, key=functools.cmp_to_key(compare_hands))
-    return total_winnings(bid for _, bid in hands)
+    return total_winnings(hands, cmp_func=hand_strength)
 
 
 @print_calls
 @print_durations(unit="ms")
 def part2(hands):
-    hands = sorted(hands, key=functools.cmp_to_key(compare_hands_with_joker))
-    return total_winnings(bid for _, bid in hands)
+    return total_winnings(hands, cmp_func=hand_strength_with_joker)
 
 
-def compare_hands(h1, h2):
+def total_winnings(hands, cmp_func):
+    key_func = cmp_to_key(partial(compare_hands, cmp_func=cmp_func))
+    hands = sorted(hands, key=key_func)
+
+    winnings = 0
+    for rank, (_, bid) in enumerate(hands, 1):
+        winnings += bid * (rank)
+
+    return winnings
+
+
+def compare_hands(h1, h2, cmp_func):
     c1, c2 = h1[0], h2[0]
-    s1, s2 = hand_strength(c1), hand_strength(c2)
+    s1, s2 = cmp_func(c1), cmp_func(c2)
 
     if s1 > s2:
         return 1
     elif s1 < s2:
         return -1
-    return compare_individual_cards(c1, c2)
 
-
-def compare_hands_with_joker(h1, h2):
-    c1, c2 = h1[0], h2[0]
-    s1 = max(map(hand_strength, permute_joker(c1)))
-    s2 = max(map(hand_strength, permute_joker(c2)))
-
-    if s1 > s2:
-        return 1
-    elif s1 < s2:
-        return -1
     return compare_individual_cards(c1, c2)
 
 
@@ -56,44 +53,75 @@ def compare_individual_cards(h1, h2):
             return 1
         elif c1 < c2:
             return -1
+
     return 0
 
 
-def permute_joker(cards):
-    # indices of all joker cards and all possible permutations
-    indices = [i for i, card in enumerate(cards) if card == 0]
-    ranks_without_joker = range(1, len(RANKS_PART2))
-    for perm in itertools.product(ranks_without_joker, repeat=len(indices)):
-        yield tuple(
-            perm[indices.index(i)] if i in indices else original_card
-            for i, original_card in enumerate(cards)
-        )
-
-
 def hand_strength(cards):
-    vals = list(Counter(cards).values())
+    c = list(Counter(cards).values())
 
-    if 5 in vals:  # five of a kind
+    if 5 in c:  # five of a kind
         return 7
-    elif 4 in vals:  # four of a kind
+    elif 4 in c:  # four of a kind
         return 6
-    elif 2 in vals and 3 in vals:  # full house
+    elif 3 in c and 2 in c:  # full house
         return 5
-    elif 3 in vals and vals.count(1) == 2:  # three of a kind
+    elif 3 in c:  # three of a kind
         return 4
-    elif vals.count(2) == 2 and vals.count(1) == 1:  # two pair
+    elif c.count(2) == 2:  # two pair
         return 3
-    elif vals.count(2) == 1 and vals.count(1) == 3:  # one pair
+    elif c.count(2) == 1:  # one pair
         return 2
-    elif vals.count(1) == 5:  # high card
-        return 1
+
+    return 1  # high card
 
 
-def total_winnings(bids):
-    total = 0
-    for rank, bid in enumerate(bids, 1):
-        total += bid * (rank)
-    return total
+def hand_strength_with_joker(cards):
+    counts = Counter(cards)
+
+    # sizes of unique card sets, excluding joker cards
+    c = list(v for k, v in counts.items() if k != 0)
+    j = counts[0]  # number of joker cards
+
+    # five of a kind
+    if (
+        (5 in c)
+        or (4 in c and j == 1)
+        or (3 in c and j == 2)
+        or (2 in c and j == 3)
+        or (1 in c and j == 4)
+        or (j == 5)
+    ):
+        return 7
+
+    # four of a kind
+    elif (
+        (4 in c)
+        or (3 in c and j == 1)
+        or (2 in c and j == 2)
+        or (1 in c and j == 3)
+        or (j == 4)
+    ):
+        return 6
+
+    # full house
+    elif (3 in c and 2 in c) or (c.count(2) == 2 and j == 1):
+        return 5
+
+    # three of a kind
+    elif (3 in c) or (2 in c and j == 1) or (1 in c and j == 2) or (j == 3):
+        return 4
+
+    # two pair
+    elif (c.count(2) == 2) or (c.count(2) == 1 and j == 1):
+        return 3
+
+    # one pair
+    elif (c.count(2) == 1) or (c.count(1) == 4 and j == 1):
+        return 2
+
+    # high card
+    return 1
 
 
 @collecting
