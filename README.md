@@ -16,6 +16,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 |   6 | **[Wait For It](https://adventofcode.com/2023/day/6)**                     | [day6.py](src/day6.py) |             - |             - |
 |   7 | **[Camel Cards](https://adventofcode.com/2023/day/7)**                     | [day7.py](src/day7.py) |         26 ms |         46 ms |
 |   8 | **[Haunted Wasteland](https://adventofcode.com/2023/day/8)**               | [day8.py](src/day8.py) |             - |        191 ms |
+|   9 | **[Mirage Maintenance](https://adventofcode.com/2023/day/9)**              | [day9.py](src/day9.py) |             - |             - |
 
 Timings are measured on my computer in a non-scientific way.
 Empty durations indicate a runtime of less than ten milliseconds.
