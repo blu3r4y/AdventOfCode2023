@@ -35,8 +35,7 @@ def part2(cells):
     G, start = build_graph(cells)
 
     # find (any) loop that is reachable from the start
-    loop = G.subgraph(nx.node_connected_component(G, start))
-    cycle = [u for u, v in nx.find_cycle(loop, start)]
+    cycle = [u for u, v in nx.find_cycle(G, start)]
 
     # compute the polygon area and derive the number of inner grid points
     area = compute_positive_polygon_area(cycle)
