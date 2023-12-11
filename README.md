@@ -18,6 +18,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 |   8 | **[Haunted Wasteland](https://adventofcode.com/2023/day/8)**               | [day8.py](src/day8.py)   |             - |        191 ms |
 |   9 | **[Mirage Maintenance](https://adventofcode.com/2023/day/9)**              | [day9.py](src/day9.py)   |             - |             - |
 |  10 | **[Pipe Maze](https://adventofcode.com/2023/day/10)**                      | [day10.py](src/day10.py) |        286 ms |        391 ms |
+|  11 | **[Cosmic Expansion](https://adventofcode.com/2023/day/11)**               | [day11.py](src/day11.py) |         13 ms |         17 ms |
 
 Timings are measured on my computer in a non-scientific way.
 Empty durations indicate a runtime of less than ten milliseconds.
