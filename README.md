@@ -21,6 +21,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 |  11 | **[Cosmic Expansion](https://adventofcode.com/2023/day/11)**               | [day11.py](src/day11.py) |         13 ms |         17 ms |
 |  12 | **[Hot Springs](https://adventofcode.com/2023/day/12)**                    | 🚧 WIP                   |               |               |
 |  13 | **[Point of Incidence](https://adventofcode.com/2023/day/13)**             | [day13.py](src/day13.py) |         11 ms |         11 ms |
+|  14 | **[Parabolic Reflector Dish](https://adventofcode.com/2023/day/14)**       | [day14.py](src/day14.py) |             - |      2.310 ms |
 
 Timings are measured on my computer in a non-scientific way.
 Empty durations indicate a runtime of less than ten milliseconds.
