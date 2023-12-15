@@ -10,7 +10,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 | --: | :------------------------------------------------------------------------- | :----------------------- | ------------: | ------------: |
 |   1 | **[Trebuchet?!](https://adventofcode.com/2023/day/1)**                     | [day1.py](src/day1.py)   |             - |             - |
 |   2 | **[Cube Conundrum](https://adventofcode.com/2023/day/2)**                  | [day2.py](src/day2.py)   |             - |             - |
-|   3 | **[Gear Ratios](https://adventofcode.com/2023/day/3)**                     | [day3.py](src/day3.py)   |             - |        187 ms |
+|   3 | **[Gear Ratios](https://adventofcode.com/2023/day/3)**                     | [day3.py](src/day3.py)   |             - |             - |
 |   4 | **[Scratchcards](https://adventofcode.com/2023/day/4)**                    | [day4.py](src/day4.py)   |             - |             - |
 |   5 | **[If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5)** | [day5.py](src/day5.py)   |             - |             - |
 |   6 | **[Wait For It](https://adventofcode.com/2023/day/6)**                     | [day6.py](src/day6.py)   |             - |             - |
@@ -23,6 +23,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 |  13 | **[Point of Incidence](https://adventofcode.com/2023/day/13)**             | [day13.py](src/day13.py) |         11 ms |         11 ms |
 |  14 | **[Parabolic Reflector Dish](https://adventofcode.com/2023/day/14)**       | [day14.py](src/day14.py) |             - |      2.310 ms |
 |  15 | **[Lens Library](https://adventofcode.com/2023/day/15)**                   | [day15.py](src/day15.py) |             - |             - |
+|  16 | **[todo](https://adventofcode.com/2023/day/16)**                           | [day16.py](src/day16.py) |             - |             - |
 
 Timings are measured on my computer in a non-scientific way.
 Empty durations indicate a runtime of less than ten milliseconds.
