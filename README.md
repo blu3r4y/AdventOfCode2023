@@ -23,7 +23,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 |  13 | **[Point of Incidence](https://adventofcode.com/2023/day/13)**             | [day13.py](src/day13.py) |         11 ms |         11 ms |
 |  14 | **[Parabolic Reflector Dish](https://adventofcode.com/2023/day/14)**       | [day14.py](src/day14.py) |             - |      2.310 ms |
 |  15 | **[Lens Library](https://adventofcode.com/2023/day/15)**                   | [day15.py](src/day15.py) |             - |             - |
-|  16 | **[todo](https://adventofcode.com/2023/day/16)**                           | [day16.py](src/day16.py) |             - |             - |
+|  16 | **[The Floor Will Be Lava](https://adventofcode.com/2023/day/16)**         | [day16.py](src/day16.py) |         12 ms |      3.409 ms |
 
 Timings are measured on my computer in a non-scientific way.
 Empty durations indicate a runtime of less than ten milliseconds.
