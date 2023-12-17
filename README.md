@@ -24,6 +24,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 |  14 | **[Parabolic Reflector Dish](https://adventofcode.com/2023/day/14)**       | [day14.py](src/day14.py) |             - |      2.310 ms |
 |  15 | **[Lens Library](https://adventofcode.com/2023/day/15)**                   | [day15.py](src/day15.py) |             - |             - |
 |  16 | **[The Floor Will Be Lava](https://adventofcode.com/2023/day/16)**         | [day16.py](src/day16.py) |         12 ms |      3.409 ms |
+|  17 | **[Clumsy Crucible](https://adventofcode.com/2023/day/17)**                | [day17.py](src/day17.py) |      1.762 ms |      5.780 ms |
 
 Timings are measured on my computer in a non-scientific way.
 Empty durations indicate a runtime of less than ten milliseconds.
