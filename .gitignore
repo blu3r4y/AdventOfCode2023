@@ -8,6 +8,9 @@ src/day.py
 src/scratchpad*
 src/bluelib/
 
+# isort
+*.isorted
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
