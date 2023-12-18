@@ -25,6 +25,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 |  15 | **[Lens Library](https://adventofcode.com/2023/day/15)**                   | [day15.py](src/day15.py) |             - |             - |
 |  16 | **[The Floor Will Be Lava](https://adventofcode.com/2023/day/16)**         | [day16.py](src/day16.py) |         12 ms |      3.409 ms |
 |  17 | **[Clumsy Crucible](https://adventofcode.com/2023/day/17)**                | [day17.py](src/day17.py) |      1.762 ms |      5.780 ms |
+|  18 | **[Lavaduct Lagoon](https://adventofcode.com/2023/day/18)**                | [day18.py](src/day18.py) |             - |             - |
 
 Timings are measured on my computer in a non-scientific way.
 Empty durations indicate a runtime of less than ten milliseconds.
