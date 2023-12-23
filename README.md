@@ -29,7 +29,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 |  19 | **[Aplenty](https://adventofcode.com/2023/day/19)**                        | 🚧 WIP                   |               |                  |
 |  20 | **[Pulse Propagation](https://adventofcode.com/2023/day/20)**              | 🚧 WIP                   |               |                  |
 |  21 | **[Step Counter](https://adventofcode.com/2023/day/21)**                   | 🚧 WIP                   |               |                  |
-|  22 | **[Sand Slabs](https://adventofcode.com/2023/day/22)**                     | 🚧 WIP                   |               |                  |
+|  22 | **[Sand Slabs](https://adventofcode.com/2023/day/22)**                     | [day22.py](src/day22.py) |        624 ms |           647 ms |
 |  23 | **[A Long Walk](https://adventofcode.com/2023/day/23)**                    | [day23.py](src/day23.py) |         98 ms | **1 min 18 sec** |
 
 Timings are measured on my computer in a non-scientific way.
