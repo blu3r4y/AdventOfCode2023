@@ -26,7 +26,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 |  16 | **[The Floor Will Be Lava](https://adventofcode.com/2023/day/16)**         | [day16.py](src/day16.py) |         12 ms |         3.409 ms |
 |  17 | **[Clumsy Crucible](https://adventofcode.com/2023/day/17)**                | [day17.py](src/day17.py) |      1.762 ms |         5.780 ms |
 |  18 | **[Lavaduct Lagoon](https://adventofcode.com/2023/day/18)**                | [day18.py](src/day18.py) |             - |                - |
-|  19 | **[Aplenty](https://adventofcode.com/2023/day/19)**                        | 🚧 WIP                   |               |                  |
+|  19 | **[Aplenty](https://adventofcode.com/2023/day/19)**                        | [day19.py](src/day19.py) |             - |                - |
 |  20 | **[Pulse Propagation](https://adventofcode.com/2023/day/20)**              | [day20.py](src/day20.py) |         32 ms |           131 ms |
 |  21 | **[Step Counter](https://adventofcode.com/2023/day/21)**                   | [day21.py](src/day21.py) |        168 ms |        23.103 ms |
 |  22 | **[Sand Slabs](https://adventofcode.com/2023/day/22)**                     | [day22.py](src/day22.py) |        624 ms |           647 ms |
