@@ -31,6 +31,7 @@ My solutions for the [AoC 2023](https://adventofcode.com/2023) challenges, writt
 |  21 | **[Step Counter](https://adventofcode.com/2023/day/21)**                   | [day21.py](src/day21.py) |        168 ms |        23.103 ms |
 |  22 | **[Sand Slabs](https://adventofcode.com/2023/day/22)**                     | [day22.py](src/day22.py) |        624 ms |           647 ms |
 |  23 | **[A Long Walk](https://adventofcode.com/2023/day/23)**                    | [day23.py](src/day23.py) |         98 ms | **1 min 18 sec** |
+|  24 | **[Never Tell Me The Odds](https://adventofcode.com/2023/day/24)**         | [day24.py](src/day24.py) |        115 ms |            90 ms |
 
 Timings are measured on my computer in a non-scientific way.
 Empty durations indicate a runtime of less than ten milliseconds.
